@@ -78,6 +78,10 @@ p {
     font-family: 'MontserratR';
 }
 
+a {
+    color: #C20F0F;
+}
+
 main {
     width: 90%;
     margin: 2vh 5% 2vh 5%;
