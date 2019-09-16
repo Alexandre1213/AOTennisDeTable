@@ -5,9 +5,9 @@ document.write(`
     </div>
     <ul class="nav-links">
         <li><a href="./index.html">Accueil</a></li>
-        <li><a href="Compétitions">Compétitions</a></li>
+        <li><a href="./news.html">Actualités</a></li>
+        <li><a href="./competitions.html">Compétitions</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        <li><a href="Acutvueob">Actualités</a></li>
     </ul>
     <div class="burger">
         <div class="line1"></div>

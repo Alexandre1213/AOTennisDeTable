@@ -11,6 +11,11 @@ Yellow : #F6AF33
     src: url("./../fonts/Montserrat-Regular.ttf")
 }
 
+@font-face {
+    font-family: 'MontserratB';
+    src: url("./../fonts/Montserrat-Bold.ttf")
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +23,13 @@ Yellow : #F6AF33
 }
 
 h1.big-title {
-    margin-top: 10vh;
+    margin: 10vh auto 7vh auto;
 
     font-family: 'MontserratR';
-    font-size: 10vw;
+    font-size: 8vh;
     color: #C20F0F;
+
+    max-width: 90%;
 }
 
 h1 {
@@ -33,105 +40,52 @@ h2 {
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.home-image {
+    max-width: 80vw;
+    max-height: 50vh;
+    display: block;
+    margin: 2vh auto 2vh auto;
+}
 
-    min-height: 6vh;
-    background-color: #F6AF33;
+.call > p {
+    position: absolute;
+    width: 100%;
+    bottom: 5vh;
 
+    font-size: 30px;
+    text-align: center;
+    font-family: 'MontserratR';
+    color: #C20F0F; 
+
+    z-index: -5;
+}
+
+.infos {
+    position: absolute;
+    width: 90%;
+    margin: 2vh 5% 2vh 5%;
+    top: 110vh;
+}
+
+strong {
+    font-family: 'MontserratB';
+    color: #F6AF33;
+}
+
+p {
+    text-align: justify;
+    font-size: 17px;
     font-family: 'MontserratR';
 }
 
-.logo {
-    color: rgb(31, 31, 31);
-
-    font-size: 20px;
+main {
+    width: 90%;
+    margin: 2vh 5% 2vh 5%;
 }
 
-.nav-links {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-around;
-    width: 50vw;
-
+.bureau-list {
     list-style: none;
-}
 
-.nav-links a {
-    color: rgb(31, 31, 31);
-    text-decoration: none;
-}
-
-.burger {
-    display: none;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: white;
-
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 94vh;
-        background-color: #F6AF33;
-        top: 6vh;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        transform: translateX(100%);
-        transition: transform 0.7s ease-in-out;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinksFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px)
+    font-size: 17px;
+    font-family: 'MontserratR';
 }

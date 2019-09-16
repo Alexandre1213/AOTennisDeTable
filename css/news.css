@@ -1,0 +1,36 @@
+.card-no-image {
+    display: block;
+
+    max-width: 600px;
+    margin: auto;
+
+    padding: 5px 20px 10px 20px;
+    background-color: #F6AF33;
+    border-color: #C20F0F;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+.card-title {
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+
+    font-family: 'MontserratR';
+    font-size: 30px;
+    color: #C20F0F;
+}
+
+.card-date {
+    text-align: center;
+    color: rgb(0, 0, 0, 0.5);
+
+    margin: 0px 0px 15px 0px;
+}
+
+@media screen and (max-width:750px) {
+    .card-no-image {
+        max-width: 80%;
+    }
+}
