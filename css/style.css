@@ -76,6 +76,13 @@ p {
     text-align: justify;
     font-size: 17px;
     font-family: 'MontserratR';
+
+    line-height: 150%;
+}
+
+#comp_pres {
+    width: 80%;
+    margin: 5vh auto
 }
 
 a {
@@ -92,4 +99,27 @@ main {
 
     font-size: 17px;
     font-family: 'MontserratR';
+}
+
+th, td {
+    border: 2px solid #F6AF33;
+
+    text-align: center;
+    font-family: 'MontserratR';
+    font-size: 25px;
+}
+
+td {
+    padding: 10px;
+}
+
+table {
+    width: 600px;
+    margin: 40px auto;
+}
+
+@media screen and (max-width:750px) {
+    table {
+        max-width: 80%;
+    }
 }
