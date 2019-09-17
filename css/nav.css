@@ -46,7 +46,7 @@ nav {
 }
 
 @media screen and (max-width:768px) {
-    body {
+    html, body {
         position: relative;
         overflow-x: hidden;
         height: 100vh;
